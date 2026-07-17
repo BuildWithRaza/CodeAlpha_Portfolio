@@ -1,0 +1,162 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024">
+
+<defs>
+
+<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+<stop offset="0%" stop-color="#090979"/>
+<stop offset="100%" stop-color="#00D4FF"/>
+</linearGradient>
+
+<linearGradient id="gold" x1="0" y1="0" x2="1" y2="1">
+<stop offset="0%" stop-color="#FFE57A"/>
+<stop offset="50%" stop-color="#FFC107"/>
+<stop offset="100%" stop-color="#B8860B"/>
+</linearGradient>
+
+<filter id="shadow">
+<feDropShadow dx="0" dy="10" stdDeviation="15" flood-opacity="0.35"/>
+</filter>
+
+</defs>
+
+
+<!-- Background -->
+<rect width="1024" height="1024"
+rx="512"
+fill="url(#bg)"/>
+
+
+<!-- Outer Glow Circle -->
+<circle cx="512" cy="512" r="420"
+fill="none"
+stroke="#FFFFFF"
+stroke-opacity="0.25"
+stroke-width="5"/>
+
+
+<!-- Main Glass Card -->
+<rect x="120" y="120"
+width="784"
+height="784"
+rx="180"
+fill="#FFFFFF"
+fill-opacity="0.95"
+filter="url(#shadow)"/>
+
+
+<!-- Top Line -->
+<rect x="250" y="250"
+width="524"
+height="8"
+rx="5"
+fill="url(#gold)"/>
+
+
+<!-- College Name -->
+<text x="512"
+y="330"
+text-anchor="middle"
+font-family="Segoe UI,Arial"
+font-size="32"
+font-weight="900"
+fill="#09203F">
+
+MEENA SHAH INSTITUTE
+
+</text>
+
+<text x="512"
+y="375"
+text-anchor="middle"
+font-family="Segoe UI,Arial"
+font-size="32"
+font-weight="900"
+fill="#09203F">
+
+OF TECHNOLOGY AND MANAGEMENT
+
+</text>
+
+
+<!-- Laptop / Coding Icon -->
+<rect x="390" y="430"
+width="244"
+height="130"
+rx="15"
+fill="#09203F"/>
+
+<rect x="420" y="460"
+width="184"
+height="80"
+fill="#00D4FF"/>
+
+<text x="512"
+y="515"
+text-anchor="middle"
+font-family="monospace"
+font-size="42"
+font-weight="bold"
+fill="#FFFFFF">
+
+&lt;/&gt;
+
+</text>
+
+<path d="M360 580 H664 L700 610 H324 Z"
+fill="#09203F"/>
+
+
+<!-- Course -->
+<text x="512"
+y="700"
+text-anchor="middle"
+font-family="Segoe UI,Arial"
+font-size="90"
+font-weight="900"
+fill="#09203F">
+
+BCA
+
+</text>
+
+
+<!-- Batch -->
+<text x="512"
+y="770"
+text-anchor="middle"
+font-family="Segoe UI,Arial"
+font-size="45"
+font-weight="800"
+fill="#B8860B">
+
+ 2024 - 2027
+
+</text>
+
+
+<!-- Footer -->
+<text x="512"
+y="825"
+text-anchor="middle"
+font-family="Segoe UI,Arial"
+font-size="28"
+font-weight="700"
+fill="#09203F">
+
+FUTURE TECHNOLOGY PROFESSIONAL
+
+</text>
+
+
+<!-- Decorative Circuits -->
+<circle cx="230" cy="430" r="12" fill="#FFC107"/>
+<circle cx="794" cy="430" r="12" fill="#FFC107"/>
+
+<line x1="230" y1="430" x2="300" y2="430"
+stroke="#FFC107" stroke-width="5"/>
+
+<line x1="724" y1="430" x2="794" y2="430"
+stroke="#FFC107" stroke-width="5"/>
+
+
+</svg>

@@ -1,0 +1,844 @@
+@import url('https://fonts.googleapis.com/css2?family=Montenegrin+Gothic+One&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Reddit+Sans:ital,wght@0,200..900;1,200..900&display=swap');
+
+:root {
+    --primary: #813ade;
+    --secondary: rgba(1, 8, 40, 0.95);
+    --dark: #020617;
+    --text: #e2e8f0;
+    --gray: #94a3b8;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Reddit Sans", sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: var(--dark);
+    color: var(--text);
+    overflow-x: hidden;
+}
+
+.purple {
+    color: var(--primary);
+    font-family: "Montenegrin Gothic One", serif;
+    font-weight: 400;
+    font-size: 25px;
+    white-space: nowrap;
+}
+
+.purple2 {
+    color: var(--primary);
+    font-family: "Montenegrin Gothic One", serif;
+    font-weight: 400;
+    font-size: 25px;
+
+}
+
+.large {
+    font-size: 50px;
+}
+
+hr {
+    border: none;
+    box-shadow: 0 0 20px var(--primary);
+    height: 5px;
+}
+
+
+nav {
+
+
+    width: 100%;
+    height: 70px;
+    top: 0;
+    z-index: 100;
+    background: var(--secondary);
+    box-shadow: 0 0 20px var(--primary);
+    position: sticky;
+
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.rightNav {
+    position: relative;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+    transition: transform 0.6s ease;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    transition: .3s;
+}
+
+nav a:hover {
+    color: var(--primary);
+}
+
+.hamburger {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: none;
+
+}
+
+.nav-close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: none;
+
+}
+
+section {
+    scroll-margin-top: 120px;
+}
+
+.firstSection {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 50px 0;
+
+}
+
+.firstSectionLeft {
+    width: 30%;
+    line-height: 2rem;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.firstSectionLeft h4 {
+    line-height: 2.5rem;
+    font-weight: 400;
+
+}
+
+.viewButtons {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+
+}
+
+.viewResumeButton button,
+.viewCertificatesButton button {
+    border: none;
+    background-color: var(--primary);
+    color: var(--text);
+    cursor: pointer;
+    font-size: 20px;
+    margin: 20px 0px;
+    padding: 10px;
+    border-radius: 15px;
+    font-family: "Montenegrin Gothic One", serif;
+    transition: all 0.5s ease;
+
+
+}
+
+.viewResumeButton button:hover,
+.viewCertificatesButton button:hover {
+    color: var(--dark);
+    box-shadow: 0 0 20px var(--gray);
+}
+
+.viewResumeButton button:active,
+.viewCertificatesButton button:active {
+    transform: scale(0.90);
+}
+
+.firstSectionRight {
+    width: 30%;
+
+
+}
+
+.firstSectionRight img {
+    width: 100%;
+    border-radius: 50%;
+    box-shadow: 0 0 20px #0f172a;
+    transition: box-shadow 1s ease;
+
+
+}
+
+.firstSectionRight img:hover {
+    box-shadow: 0 0 20px var(--primary);
+}
+
+.aboutSection {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 50px 0;
+
+}
+
+.aboutSectionLeft {
+    width: 30%;
+
+
+}
+
+.aboutSectionRight {
+    width: 35%;
+    line-height: 2rem;
+    font-size: 20px;
+    text-align: center;
+}
+
+.aboutSectionRight h2 {
+    text-align: center;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2.2rem;
+}
+
+
+.aboutSectionLeft img {
+    width: 100%;
+
+
+
+}
+
+.educationSection {
+    margin: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.educationSection h2 {
+    color: #fff;
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2.2rem;
+}
+
+.education-Card {
+    display: flex;
+    background-color: var(--secondary);
+    justify-content: space-around;
+    align-items: center;
+    gap: 30px;
+    padding: 20px;
+    width: 60%;
+    border-radius: 30px;
+    transition: all 0.7s ease;
+}
+
+.edu-img {
+    width: 20%;
+}
+
+.edu-img img {
+    width: 100%;
+    border-radius: 50%;
+    box-shadow: 0 0 20px var(--primary);
+
+}
+
+.edu-info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+.education-Card:hover {
+    box-shadow: 0 0 20px var(--primary);
+
+}
+
+.skills {
+    width: 90%;
+    max-width: 700px;
+    margin: 60px auto;
+}
+
+.skills h2 {
+    color: #fff;
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2.2rem;
+}
+
+.skill-card {
+    background: var(--secondary);
+    padding: 18px 22px;
+    margin-bottom: 20px;
+    border-radius: 12px;
+    box-shadow: 0 8px 10px #0f172a;
+    transition: .3s;
+}
+
+.skill-card:hover {
+    box-shadow: 0 0 20px var(--primary);
+}
+
+.skill-info {
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.progress {
+    width: 100%;
+    height: 10px;
+    background: #334155;
+    border-radius: 50px;
+    overflow: hidden;
+}
+
+.progress-bar {
+    height: 100%;
+    border-radius: 50px;
+    animation: fillBar 2s ease;
+}
+
+.html {
+    width: 75%;
+    background: var(--primary);
+}
+
+.css {
+    width: 70%;
+    background: var(--primary);
+}
+
+.js {
+    width: 40%;
+    background: var(--primary);
+}
+
+.java {
+    width: 50%;
+    background: var(--primary);
+}
+
+.python {
+    width: 40%;
+    background: var(--primary);
+}
+
+@keyframes fillBar {
+    from {
+        width: 0;
+    }
+}
+
+.projectSection {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    margin: 50px;
+    gap: 40px;
+}
+
+.projectSectionHeading {
+    grid-column: 1/4;
+    text-align: center;
+}
+
+.projectSectionHeading h2 {
+    color: #fff;
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2.2rem;
+}
+
+.firstProject,
+.secondProject,
+.thirdProject {
+    box-shadow: 0 0 20px #0f172a;
+    background-color: var(--secondary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 50px 20px;
+    gap: 10px;
+    border-radius: 35px;
+    transition: all 1s ease;
+
+}
+
+.firstProject:hover,
+.secondProject:hover,
+.thirdProject:hover {
+    box-shadow: 0 0 20px var(--primary);
+}
+
+.firstProject img,
+.secondProject img,
+.thirdProject img {
+    width: 90%;
+    box-shadow: 0 0 20px #0f172a;
+}
+
+.project-content {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.tags {
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.tags span {
+    background-color: var(--primary);
+    color: var(--text);
+    padding: 10px;
+    border-radius: 15px;
+    cursor: pointer;
+    font-family: "Montenegrin Gothic One", serif;
+    transition: all 0.6s ease;
+}
+
+.tags span:hover {
+
+    color: var(--dark);
+    box-shadow: 0 0 20px var(--gray);
+
+}
+
+.project-links {
+    display: flex;
+    justify-content: space-around;
+
+
+}
+
+.project-links a {
+    color: var(--gray);
+    text-decoration: none;
+}
+
+.project-links a:hover {
+    color: var(--primary);
+}
+
+.contactSection {
+    margin: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.contactSectionHeading {}
+
+.contactSectionHeading h2 {
+
+    color: #fff;
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2.2rem;
+}
+
+.contactSectionCards {
+    display: flex;
+    gap: 40px;
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+
+.contactSectionCard {
+
+    display: flex;
+    z-index: 20;
+
+    align-items: center;
+
+    gap: 20px;
+
+    width: 30%;
+    background: var(--secondary);
+
+    padding: 25px;
+
+    border-radius: 18px;
+
+    transition: .3s;
+
+}
+
+
+
+.contactSectionCard:hover {
+
+    color: var(--primary);
+    box-shadow: 0 0 20px var(--primary);
+
+}
+
+.emailImg,
+.InstaImg {
+    background-color: var(--primary);
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.contactSectionCard h3 {
+
+    margin-bottom: 5px;
+
+}
+
+
+
+.contactSectionCard p {
+
+    color: var(--gray);
+
+}
+
+.contactSectionForm {
+
+    background: var(--secondary);
+
+    padding: 35px;
+
+    border-radius: 20px;
+    transition: all .7s ease;
+    z-index: 20;
+
+}
+
+.contactSectionForm:hover {
+    box-shadow: 0 0 20px var(--primary);
+}
+
+
+.contactSectionForm input,
+
+.contactSectionForm textarea {
+
+    width: 100%;
+
+    margin-bottom: 20px;
+
+    padding: 16px;
+
+    border: none;
+
+    outline: none;
+
+    border-radius: 12px;
+
+    background: #020617;
+
+    color: white;
+
+    font-size: 1rem;
+
+}
+
+
+
+.contactSectionForm textarea {
+
+    resize: none;
+
+}
+
+
+
+.contactSectionForm input:focus,
+
+.contactSectionForm textarea:focus {
+
+    border: 1px solid var(--primary);
+
+}
+
+.sendMessageButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.sendMessageButton button {
+
+    width: 40%;
+
+
+    padding: 16px;
+
+    border: none;
+
+    border-radius: 30px;
+
+    cursor: pointer;
+
+    background-color: var(--primary);
+
+    color: white;
+    font-family: "Montenegrin Gothic One", serif;
+
+    font-size: 1rem;
+
+    font-weight: 700;
+
+    transition: .3s;
+
+}
+
+
+
+.contactSectionForm button:hover {
+
+    color: var(--dark);
+    box-shadow: 0 0 20px var(--gray);
+
+}
+
+.sendMessageButton button:active {
+    transform: scale(0.90);
+}
+
+#lightBox {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100dvw;
+    height: 100dvh;
+    background: rgba(0, 0, 0, 0.9);
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+.previous {
+    position: absolute;
+    top: 46%;
+    left: 10px;
+    cursor: pointer;
+    z-index: 100;
+}
+
+.lightBoxResume,
+.lightBoxCertificates {
+    width: 90%;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+.lightBoxResume iframe {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+
+}
+
+.lightBoxCertificates img {
+    width: 80%;
+
+    transition: all 2s ease;
+}
+
+.hide {
+    display: none;
+}
+
+.next {
+    position: absolute;
+    top: 46%;
+    right: 10px;
+    cursor: pointer;
+    z-index: 100;
+}
+
+footer {
+
+    background: var(--secondary);
+
+    padding: 70px 20px 20px;
+    box-shadow: 0 0 20px var(--primary);
+
+}
+
+
+
+.footer-container {
+
+    max-width: 1200px;
+
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+
+
+    gap: 50px;
+
+}
+
+
+
+.footer-brand h2 {
+
+    color: white;
+
+    font-size: 2.5rem;
+
+}
+
+
+
+.footer-brand p {
+
+    color: var(--gray);
+
+    margin-top: 15px;
+
+    line-height: 1.7;
+
+}
+
+.footer-quicklinks ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer-quicklinks ul li {
+    list-style: none;
+}
+
+.footer-quicklinks ul li a {
+    text-decoration: none;
+    color: var(--text);
+    transition: all .4s ease;
+}
+
+.footer-quicklinks ul li a:hover {
+    color: var(--primary);
+}
+
+
+
+
+
+.footer-social h3 {
+
+    margin-bottom: 15px;
+
+}
+
+
+
+
+.footer-social div {
+
+    display: flex;
+
+    gap: 15px;
+
+}
+
+
+
+.footer-social a {
+
+    width: 45px;
+
+    height: 45px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    border-radius: 50%;
+
+    background: var(--dark);
+
+    color: white;
+
+    transition: .3s;
+
+}
+
+
+
+.footer-social a:hover {
+
+    background: var(--primary);
+
+}
+
+
+
+.copyright {
+
+    text-align: center;
+
+    color: var(--gray);
+
+    margin-top: 50px;
+
+}

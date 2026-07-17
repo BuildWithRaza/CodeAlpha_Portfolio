@@ -1,0 +1,131 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024">
+  <defs>
+    <linearGradient id="gold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFD54F"/>
+      <stop offset="50%" stop-color="#F9A825"/>
+      <stop offset="100%" stop-color="#B8860B"/>
+    </linearGradient>
+
+    <radialGradient id="center" cx="50%" cy="40%" r="70%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="100%" stop-color="#F5F7FA"/>
+    </radialGradient>
+
+    <!-- Circular paths for curved text -->
+    <path id="topArc" d="M 182 512 A 330 330 0 0 1 842 512"/>
+    <path id="bottomArc" d="M 842 512 A 330 330 0 0 1 182 512"/>
+  </defs>
+
+  <!-- Background -->
+  <circle cx="512" cy="512" r="500" fill="#0B2D5C"/>
+
+  <!-- Gold border -->
+  <circle cx="512" cy="512" r="470"
+          fill="none"
+          stroke="url(#gold)"
+          stroke-width="18"/>
+
+  <!-- Inner panel -->
+  <circle cx="512" cy="512" r="400"
+          fill="url(#center)"
+          stroke="#D4AF37"
+          stroke-width="5"/>
+
+  <!-- Top curved text -->
+  <text font-family="Segoe UI, Arial"
+        font-size="34"
+        font-weight="700"
+        fill="#C69214"
+        letter-spacing="2">
+    <textPath href="#topArc" startOffset="50%" text-anchor="middle">
+      IMPULSE INTERNATIONAL SCHOOL
+    </textPath>
+  </text>
+
+  <!-- Bottom curved text -->
+  <text font-family="Segoe UI, Arial"
+        font-size="28"
+        font-weight="600"
+        fill="#C69214"
+        letter-spacing="3">
+    <textPath href="#bottomArc" startOffset="50%" text-anchor="middle">
+      CBSE • PASSING BATCH 2021 • CLASS X
+    </textPath>
+  </text>
+
+  <!-- Graduation cap -->
+  <polygon points="512,240 650,295 512,350 374,295"
+           fill="#0B2D5C"/>
+
+  <rect x="445" y="350"
+        width="134"
+        height="18"
+        rx="8"
+        fill="#0B2D5C"/>
+
+  <line x1="650" y1="295"
+        x2="650" y2="370"
+        stroke="#0B2D5C"
+        stroke-width="6"/>
+
+  <circle cx="650" cy="380"
+          r="8"
+          fill="#D4AF37"/>
+
+  <!-- Open book -->
+  <path d="M365 430
+           Q440 390 512 430
+           V610
+           Q440 575 365 610 Z"
+        fill="#FFFFFF"
+        stroke="#0B2D5C"
+        stroke-width="3"/>
+
+  <path d="M659 430
+           Q584 390 512 430
+           V610
+           Q584 575 659 610 Z"
+        fill="#FFFFFF"
+        stroke="#0B2D5C"
+        stroke-width="3"/>
+
+  <!-- Title -->
+  <text x="512"
+        y="700"
+        text-anchor="middle"
+        font-family="Segoe UI, Arial"
+        font-size="88"
+        font-weight="900"
+        fill="#0B2D5C">
+    CLASS X
+  </text>
+
+  <!-- Passing year -->
+  <!-- <text x="512"
+        y="775"
+        text-anchor="middle"
+        font-family="Segoe UI, Arial"
+        font-size="44"
+        font-weight="700"
+        fill="#C69214">
+    PASSING BATCH • 2021
+  </text> -->
+
+  <!-- Decorative stars -->
+  <text x="285" y="205"
+        font-size="42"
+        fill="#FFD54F">★</text>
+
+  <text x="720" y="205"
+        font-size="42"
+        fill="#FFD54F">★</text>
+
+  <!-- Gold divider -->
+  <line x1="330"
+        y1="805"
+        x2="694"
+        y2="805"
+        stroke="url(#gold)"
+        stroke-width="6"
+        stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,162 @@
+@media screen and (max-width: 1200px) {
+
+    .projectSection {
+        grid-template-columns: 1fr;
+        width: 60%;
+        margin: 50px auto;
+    }
+
+    .projectSectionHeading {
+        grid-column: 1/2;
+        text-align: center;
+    }
+
+    .education-Card {
+        width: 80%;
+    }
+
+    .contactSectionCard {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .education-Card {
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width: 800px) {
+    
+    nav ul {
+
+        flex-direction: column;
+        width: 200px;
+        background-color: var(--secondary);
+        box-shadow: 0 0 5px var(--primary);
+        padding: 50px 20px 20px 20px;
+        align-items: center;
+        margin: 0;
+        transform: translate(120%, -20px);
+    }
+
+    .nav-container {
+        align-items: start;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .firstSection {
+        flex-direction: column-reverse;
+        gap: 50px;
+    }
+
+    .firstSectionLeft {
+        width: 80%;
+    }
+
+    .firstSectionLeft h4 {
+        text-align: center;
+    }
+
+    .firstSectionRight {
+        width: 40%;
+    }
+
+    .aboutSection {
+        flex-direction: column-reverse;
+    }
+
+    .aboutSectionLeft {
+        width: 60%;
+    }
+
+    .aboutSectionRight {
+        width: 90%;
+    }
+
+    .contactSectionCards {
+        flex-direction: column;
+        width: 100dvw;
+    }
+
+}
+
+
+@media screen and (max-width: 900px) {
+    .education-Card {
+        flex-direction: column;
+    }
+
+    .edu-card2 {
+        flex-direction: column-reverse;
+    }
+
+    .edu-img {
+        width: 30%;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .edu-img {
+        width: 50%;
+    }
+
+    .sendMessageButton button {
+        width: 90%;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-brand h2 {
+        text-align: center;
+    }
+
+    .footer-brand p {
+        line-height: 1;
+        text-align: center;
+    }
+
+    .footer-quicklinks ul {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .footer-social h3 {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .contactSectionCard {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .tags {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .education-Card {
+        width: 85dvw;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    nav {
+        height: 100px;
+    }
+
+    .purple {
+        white-space: wrap;
+    }
+}
