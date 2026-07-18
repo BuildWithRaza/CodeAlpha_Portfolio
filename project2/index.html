@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="icon.ico" type="image/x-icon">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="main">
+        <div class="calculator">
+            <div class="screen">
+                <div class="historyScreen">
+
+                </div>
+                <div class="mainScreen"></div>
+            </div>
+
+            <div class="buttons">
+                <button onclick="clearDisplay()">C</button>
+                <button  onclick="deleteLast()">DEL</button>
+                <button onclick="displaynum('%')">%</button>
+                <button onclick="displaynum('/')">÷</button>
+
+                <button onclick="displaynum('7')">7</button>
+                <button onclick="displaynum('8')">8</button>
+                <button onclick="displaynum('9')">9</button>
+                <button onclick="displaynum('*')">×</button>
+
+                <button onclick="displaynum('4')">4</button>
+                <button onclick="displaynum('5')">5</button>
+                <button onclick="displaynum('6')">6</button>
+                <button onclick="displaynum('-')">−</button>
+
+                <button onclick="displaynum('1')">1</button>
+                <button onclick="displaynum('2')">2</button>
+                <button onclick="displaynum('3')">3</button>
+                <button onclick="displaynum('+')">+</button>
+
+                <button onclick="displaynum('0')">0</button>
+                <button onclick="displaynum('.')">.</button>
+                <button onclick="calculate()">=</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

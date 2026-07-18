@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: darkgray;
+    color: gold;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+.buttons {
+    margin-bottom: 20px;
+}
+
+.filter-btn {
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    background: #333;
+    color: white;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.filter-btn:hover {
+    background: gold;
+}
+
+.gallery {
+    columns: 3 250px;
+    column-gap: 15px;
+}
+
+.image {
+    break-inside: avoid;
+    margin-bottom: 15px;
+}
+
+.image img {
+    width: 100%;
+    display: block;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.image img:hover {
+    transform: scale(1.02);
+    filter: brightness(80%);
+}
+
+.hide {
+    display: none;
+}
+
+
+#lightBox {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.previous {
+    position: absolute;
+    top: 46%;
+    left: 10px;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.lightBoxImage img{
+     max-width:50%;
+    max-height:50%;
+    border-radius:10px;
+}
+
+.next {
+    position: absolute;
+    top: 46%;
+    right: 10px;
+    cursor: pointer;
+    z-index: 2;
+}

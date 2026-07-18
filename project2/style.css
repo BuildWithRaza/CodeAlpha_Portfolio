@@ -1,0 +1,113 @@
+/* General Styles */
+body {
+    background-color: rgba(206, 196, 196, 0.62);
+
+}
+
+/* Main Container */
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100dvh;
+}
+
+/* Calculator Container */
+.calculator {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 20px 10px;
+    background-color: rgb(38, 39, 39);
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.911);
+}
+
+/* Display Section */
+.screen {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    padding: 10px;
+}
+
+.mainScreen,
+.historyScreen {
+    width: 280px;
+    height: 65px;
+    padding: 5px;
+
+    background-color: rgba(255, 249, 249, 0.856);
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(164, 163, 163, 0.795);
+
+    font-size: 30px;
+    text-align: end;
+    word-break: break-all;
+}
+
+.historyScreen {
+    color: rgba(0, 0, 0, 0.438);
+}
+
+/* Buttons Container */
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+
+    width: 300px;
+    padding: 2px;
+}
+
+/* Buttons */
+button {
+    height: 50px;
+
+    background-color: rgb(28, 28, 28);
+    color: gold;
+
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 0 5px rgba(126, 126, 126, 0.795);
+
+    font-size: 30px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color:rgb(45, 45, 45) ;
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+/* Equals Button */
+button:last-child {
+    grid-column: span 2;
+    background-color: gold;
+    color: black;
+}
+
+button:last-child:hover{
+    background:rgb(227, 194, 7);
+}
+
+/* Responsive Design */
+@media screen and (max-width: 320px) {
+    .buttons {
+        width: 250px;
+    }
+
+    .buttons button {
+        height: 40px;
+    }
+
+    .mainScreen,
+    .historyScreen {
+        width: 230px;
+    }
+}
