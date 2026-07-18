@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>My Portfolio</title>
+  <link rel="shortcut icon" href="icon.ico" type="image/x-icon">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="responsive.css">
 
@@ -111,17 +112,25 @@
 
       <div class="skills-container">
 
-        <div class="skill-card">
-          <div class="skill-info">
-            <span>HTML</span>
-            <span>75%</span>
+        <div class="skill-parentCard">
+          <div class="skill-img">
+            <img src="Assets/html.svg" alt="">
           </div>
-          <div class="progress">
-            <div class="progress-bar html"></div>
+          <div class="skill-card">
+            <div class="skill-info">
+              <span>HTML</span>
+              <span>75%</span>
+            </div>
+            <div class="progress">
+              <div class="progress-bar html"></div>
+            </div>
           </div>
         </div>
-
-        <div class="skill-card">
+        <div class="skill-parentCard">
+          <div class="skill-img">
+            <img src="Assets/css.svg" alt="">
+          </div>
+          <div class="skill-card">
           <div class="skill-info">
             <span>CSS</span>
             <span>70%</span>
@@ -130,8 +139,13 @@
             <div class="progress-bar css"></div>
           </div>
         </div>
+        </div>
+        <div class="skill-parentCard">
+          <div class="skill-img">
+            <img src="Assets/js.svg" alt="">
+          </div>
+          <div class="skill-card">
 
-        <div class="skill-card">
           <div class="skill-info">
             <span>JavaScript</span>
             <span>40%</span>
@@ -141,7 +155,12 @@
           </div>
         </div>
 
-        <div class="skill-card">
+        </div>
+        <div class="skill-parentCard">
+          <div class="skill-img">
+            <img src="Assets/java.svg" alt="">
+          </div>
+         <div class="skill-card">
           <div class="skill-info">
             <span>Java</span>
             <span>50%</span>
@@ -150,8 +169,12 @@
             <div class="progress-bar java"></div>
           </div>
         </div>
-
-        <div class="skill-card">
+        </div>
+        <div class="skill-parentCard">
+          <div class="skill-img">
+            <img src="Assets/python.svg" alt="">
+          </div>
+          <div class="skill-card">
           <div class="skill-info">
             <span>Python</span>
             <span>40%</span>
@@ -161,6 +184,13 @@
           </div>
         </div>
 
+        </div>
+
+        
+        
+        
+
+        
       </div>
     </section>
     <hr>
@@ -209,7 +239,7 @@
 
           <div class="project-links">
 
-            <a href="#" target="_blank">
+            <a href="Assets/Projects/CodeAlpha_ImageGallery/index.html" target="_blank">
               Live Demo
               ↗
             </a>
@@ -261,7 +291,7 @@
 
           <div class="project-links">
 
-            <a href="#" target="_blank">
+            <a href="Assets/Projects/CodeAlpha_Calculator/index.html" target="_blank">
               Live Demo
               ↗
             </a>
@@ -313,7 +343,7 @@
 
           <div class="project-links">
 
-            <a href="#" target="_blank">
+            <a href="index.html" target="_blank">
               Live Demo
               ↗
             </a>
@@ -335,7 +365,7 @@
         <h2>Contact Me</h2>
       </div>
       <div class="contactSectionCards">
-        <div class="contactSectionCard">
+        <a href="mailto:akh1234tar@gmail.com" class="contactSectionCard">
           <div class="emailImg">
             <img width="60%" src="Assets/email.svg" alt="">
           </div>
@@ -348,8 +378,8 @@
 
           </div>
 
-        </div>
-        <div class="contactSectionCard">
+        </a>
+        <a href="https://instagram.com/_akhtar08_" class="contactSectionCard">
           <div class="InstaImg">
             <img width="60%" src="Assets/instagram.svg" alt="">
           </div>
@@ -362,10 +392,10 @@
 
           </div>
 
-        </div>
+        </a>
       </div>
       <div class="contactSectionForm">
-        <form>
+        <form id="contactForm">
 
 
           <input type="text" placeholder="Your Name" required>
@@ -385,6 +415,9 @@
             <button>Send Message</button>
           </div>
         </form>
+        <div id="successAlert" class="alert purple">
+          ✅ Message sent successfully!
+        </div>
 
       </div>
 

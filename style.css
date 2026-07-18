@@ -14,6 +14,7 @@
     box-sizing: border-box;
     font-family: "Reddit Sans", sans-serif;
     scroll-behavior: smooth;
+
 }
 
 body {
@@ -69,7 +70,7 @@ nav {
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-
+    overflow-x: hidden;
 }
 
 .logo {
@@ -78,7 +79,7 @@ nav {
 }
 
 .rightNav {
-    position: relative;
+   
 }
 
 nav ul {
@@ -100,16 +101,16 @@ nav a:hover {
 
 .hamburger {
     position: absolute;
-    top: 0;
-    right: 0;
+    top: 18px;
+    right: 10px;
     display: none;
 
 }
 
 .nav-close {
     position: absolute;
-    top: 0;
-    right: 0;
+    top: 18px;
+    right: 10px;
     display: none;
 
 }
@@ -133,7 +134,7 @@ section {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
 
 }
 
@@ -188,6 +189,7 @@ section {
     border-radius: 50%;
     box-shadow: 0 0 20px #0f172a;
     transition: box-shadow 1s ease;
+    opacity: 1.4;
 
 
 }
@@ -296,19 +298,32 @@ section {
     margin-bottom: 30px;
     font-size: 2.2rem;
 }
-
-.skill-card {
+.skill-parentCard{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
     background: var(--secondary);
     padding: 18px 22px;
     margin-bottom: 20px;
     border-radius: 12px;
     box-shadow: 0 8px 10px #0f172a;
     transition: .3s;
+    
+}
+.skill-img{
+    width: 50px;
+}
+.skill-card {
+    width: 90%;
+    
 }
 
-.skill-card:hover {
+.skill-parentCard:hover {
     box-shadow: 0 0 20px var(--primary);
 }
+
+
 
 .skill-info {
     display: flex;
@@ -498,10 +513,11 @@ section {
 
     width: 30%;
     background: var(--secondary);
-
+     color: var(--text);
     padding: 25px;
 
     border-radius: 18px;
+     text-decoration: none;
 
     transition: .3s;
 
@@ -530,6 +546,7 @@ section {
 
 .contactSectionCard h3 {
 
+   
     margin-bottom: 5px;
 
 }
@@ -539,6 +556,7 @@ section {
 .contactSectionCard p {
 
     color: var(--gray);
+   
 
 }
 
@@ -645,6 +663,21 @@ section {
 
 .sendMessageButton button:active {
     transform: scale(0.90);
+}
+
+.alert {
+  display: none;
+  position: fixed;
+  top: 10%;
+ left: 50%;
+ transform: translateX(-50%);
+  background:var(--primary);
+  color: var(--dark);
+  padding: 15px 20px;
+  border-radius: 8px;
+  font-weight: bold;
+   box-shadow: 0 0 20px var(--gray);
+  z-index: 100;
 }
 
 #lightBox {
