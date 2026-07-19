@@ -178,6 +178,95 @@ section {
     transform: scale(0.90);
 }
 
+
+#lightBox {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100dvw;
+    height: 100dvh;
+    background: rgba(0, 0, 0, 0.9);
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+.previous {
+    position: absolute;
+    top: 46%;
+    left: 10px;
+    cursor: pointer;
+    z-index: 100;
+}
+
+.lightBoxResume,
+.lightBoxCertificates {
+    width: 90%;
+    height: 95%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+.lightBoxResume iframe {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+
+}
+.lightBoxResume a{
+     text-decoration: none;
+    background-color: var(--primary);
+    color: var(--text);
+    cursor: pointer;
+    font-size: 20px;
+    margin: 20px 0px;
+    padding: 10px;
+    border-radius: 15px;
+    margin-bottom: -10px;
+    font-family: "Montenegrin Gothic One", serif;
+    transition: all 0.5s ease;
+   
+}
+.lightBoxResume a:hover{
+    color: var(--dark);
+    box-shadow: 0 0 20px var(--gray);
+}
+.lightBoxResume a:active{
+    transform: scale(0.90);
+}
+
+.lightBoxCertificates img {
+    width: 80%;
+
+    transition: all 2s ease;
+}
+
+.hide {
+    display: none;
+}
+
+.next {
+    position: absolute;
+    top: 46%;
+    right: 10px;
+    cursor: pointer;
+    z-index: 100;
+}
+
+
 .firstSectionRight {
     width: 30%;
 
@@ -680,70 +769,6 @@ section {
   z-index: 100;
 }
 
-#lightBox {
-    position: fixed;
-    left: 0;
-    top: 0;
-    width: 100dvw;
-    height: 100dvh;
-    background: rgba(0, 0, 0, 0.9);
-    justify-content: center;
-    align-items: center;
-    display: none;
-}
-
-
-.close {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    cursor: pointer;
-    z-index: 1000;
-}
-
-.previous {
-    position: absolute;
-    top: 46%;
-    left: 10px;
-    cursor: pointer;
-    z-index: 100;
-}
-
-.lightBoxResume,
-.lightBoxCertificates {
-    width: 90%;
-    height: 90%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-}
-
-
-.lightBoxResume iframe {
-    width: 100%;
-    height: 100%;
-    border-radius: 10px;
-
-}
-
-.lightBoxCertificates img {
-    width: 80%;
-
-    transition: all 2s ease;
-}
-
-.hide {
-    display: none;
-}
-
-.next {
-    position: absolute;
-    top: 46%;
-    right: 10px;
-    cursor: pointer;
-    z-index: 100;
-}
 
 footer {
 
