@@ -4,6 +4,8 @@ let navul = document.querySelector("nav ul")
 
 //adding event listener to hamburger
 hamburger.addEventListener("click", () => {
+
+   navul.style.flexDirection="column"
     navul.style.transform = "translate(15px,-15px)"
     hamburger.style.display = "none";
     navclose.style.display = "block";
@@ -13,8 +15,14 @@ hamburger.addEventListener("click", () => {
 //adding event listener to close the nav
 navclose.addEventListener("click", () => {
     navul.style.transform = "translate(120%,-20px)";
+   
     navclose.style.display = "none";
     hamburger.style.display = "block";
+     setTimeout(() => {
+         navul.style.flexDirection="row";
+    }, 400);
+
+   
 }
 )
 

@@ -31,7 +31,7 @@
     
     nav ul {
 
-        flex-direction: column;
+        
         width: 200px;
         background-color: var(--secondary);
         box-shadow: 0 0 5px var(--primary);
@@ -39,6 +39,7 @@
         align-items: center;
         margin: 0;
         transform: translate(120%, -20px);
+    
     }
 
     .nav-container {
