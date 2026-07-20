@@ -151,6 +151,9 @@
     .education-Card {
         width: 85dvw;
     }
+        .firstSectionRight {
+        width: 50%;
+    }
 }
 
 @media screen and (max-width: 400px) {
@@ -160,5 +163,8 @@
 
     .purple {
         white-space: wrap;
+    }
+        .firstSectionRight {
+        width: 60%;
     }
 }
