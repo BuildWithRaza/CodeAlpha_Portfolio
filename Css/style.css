@@ -470,14 +470,15 @@ section {
 
 .projectSection {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 500px);
     justify-items: center;
-    margin: 50px;
+    justify-content: center;
+    margin: 50px auto;
     gap: 40px;
 }
 
 .projectSectionHeading {
-    grid-column: 1/4;
+    grid-column: 1/3;
     text-align: center;
 }
 
@@ -490,7 +491,8 @@ section {
 
 .firstProject,
 .secondProject,
-.thirdProject {
+.thirdProject,
+.fourthProject {
     box-shadow: 0 0 20px #0f172a;
     background-color: var(--secondary);
     display: flex;
@@ -507,13 +509,15 @@ section {
 
 .firstProject:hover,
 .secondProject:hover,
-.thirdProject:hover {
+.thirdProject:hover,
+.fourthProject:hover {
     box-shadow: 0 0 20px var(--primary);
 }
 
 .firstProject img,
 .secondProject img,
-.thirdProject img {
+.thirdProject img,
+.fourthProject img {
     width: 90%;
     box-shadow: 0 0 20px #0f172a;
 }
